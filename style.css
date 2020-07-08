@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.form {
+    margin: 30px 0;
+}
+
+.form-control {
+    margin: 15px 0 15px 0;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-control input {
+    display: block;
+    font-size: 16px;
+    color: #4a4a4a;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control input:focus {
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: seagreen;
+    color: #fff;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    transform: scale(0.995);
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 30px 0 20px 0;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+#exercise-list tr td i {
+    color: #4a4a4a;
+    cursor: pointer;
+}
+
+.success, .error {
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0 15 0;
+    border-radius: 4px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.success {
+    background-color: seagreen;
+}
+
+.error {
+    background-color: firebrick;
+}

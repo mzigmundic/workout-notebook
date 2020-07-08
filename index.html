@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <title>Workout Notebook</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Add Exercise</h1>
+        <form id="exercise-form" class="form">
+            <div class="form-control">
+                <label for="name">Exercise Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-control">
+                <label for="nsets">Number of Sets</label>
+                <input type="number" id="nsets" min="0">
+            </div>
+            <div class="form-control">
+                <label for="nreps">Number of Reps</label>
+                <input type="number" id="nreps" min="0">
+            </div>
+            <div class="form-control">
+                <label for="weight">Weight In Kilos</label>
+                <input type="number" id="weight" min="0">
+            </div>
+            <div class="form-control">
+                <button type="submit" id="submit-btn" class="btn">Submit</button>
+            </div>   
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Sets#</th>
+                    <th>Reps#</th>
+                    <th>Weight [kg]</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="exercise-list"></tbody>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
